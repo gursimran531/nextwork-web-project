@@ -10,31 +10,24 @@
 <profiles>
   <profile>
     <id>nextwork-nextwork-devops-cicd</id>
-    <activation><activeByDefault>true</activeByDefault></activation>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
     <repositories>
       <repository>
         <id>nextwork-nextwork-devops-cicd</id>
-        <url>https://…/nextwork-devops-cicd/</url>
+        <url>https://nextwork-789103393231.d.codeartifact.us-east-1.amazonaws.com/maven/nextwork-devops-cicd/</url>
       </repository>
-      <!-- === ADD THIS === -->
-      <repository>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2/</url>
-        <releases><enabled>true</enabled></releases>
-        <snapshots><enabled>false</enabled></snapshots>
-      </repository>
-      <!-- =============== -->
     </repositories>
   </profile>
 </profiles>
-
 
 <mirrors>
   <mirror>
     <id>nextwork-nextwork-devops-cicd</id>
     <name>nextwork-nextwork-devops-cicd</name>
     <url>https://nextwork-789103393231.d.codeartifact.us-east-1.amazonaws.com/maven/nextwork-devops-cicd/</url>
-    <mirrorOf>!central</mirrorOf>
+    <mirrorOf>*</mirrorOf>
   </mirror>
 </mirrors>
 </settings>
