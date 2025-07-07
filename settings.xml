@@ -34,7 +34,7 @@
     <id>nextwork-nextwork-devops-cicd</id>
     <name>nextwork-nextwork-devops-cicd</name>
     <url>https://nextwork-789103393231.d.codeartifact.us-east-1.amazonaws.com/maven/nextwork-devops-cicd/</url>
-    <mirrorOf>*</mirrorOf>
+    <mirrorOf>!central</mirrorOf>
   </mirror>
 </mirrors>
 </settings>
